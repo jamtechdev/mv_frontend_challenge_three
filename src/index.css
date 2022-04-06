@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f8f9fa;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* .container {
+  background-color: antiquewhite;
+}
+.playlist-area {
+  background-color: dimgray;
+}
+.player-area {
+  background-color: aquamarine;
+} */
+
+.video-responsive iframe {
+  width: 100%;
+  height: 480px;
+}
+
+.player-list {
+  display: flex;
+  align-items: start;
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+.video-delete {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.p-10 {
+  padding: 10px;
+}
+.add_new-video {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+  .item_title {
+    padding-left: 15px;
+    font-weight: 500;
+  }
+  .video_list_section {
+    height: 75vh;
+    overflow-y: scroll;
+  }
+}
+
+.title {
+  padding: 15px 0px;
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 991px) {
+  .item_title {
+    padding-left: 15px;
+    font-weight: 500;
+    width: calc(100% - 180px);
+  }
+}
